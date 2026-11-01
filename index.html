@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <script>/* Modo claro/oscuro guardado por el usuario; si no hay, se sigue al sistema */
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesús Mª Garrobo Vaca · Desarrollo web e infraestructura cloud</title>
+  <meta name="description" content="Desarrollador web e infraestructura cloud en medios digitales. PHP, Symfony, Sulu CMS, Python y AWS.">
+  <link rel="canonical" href="https://jesus.garrobo.es/">
+  <link rel="alternate" hreflang="es" href="https://jesus.garrobo.es/">
+  <link rel="alternate" hreflang="en" href="https://jesus.garrobo.es/en/">
+  <link rel="alternate" hreflang="x-default" href="https://jesus.garrobo.es/">
+  <script>
+  /* Idioma por defecto según el navegador; la elección manual (botón ES/EN) tiene prioridad */
+  (function () {
+    try {
+      if (/bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent)) return;
+      var saved = localStorage.getItem('lang');
+      var nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'es').toLowerCase();
+      var lang = saved || (/^(es|ca|gl|eu)/.test(nav) ? 'es' : 'en');
+      if (lang === 'en') location.replace('/en/' + location.hash);
+    } catch (e) {}
+  })();
+  </script>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jesús Mª Garrobo Vaca">
+  <meta property="og:description" content="Desarrollo web e infraestructura cloud en medios digitales.">
+  <meta property="og:url" content="https://jesus.garrobo.es/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://jesus.garrobo.es/assets/og-es.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jesús Mª Garrobo Vaca — Responsable Técnico Digital">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jesús Mª Garrobo Vaca",
+    "url": "https://jesus.garrobo.es/",
+    "jobTitle": "Responsable Técnico Digital",
+    "worksFor": { "@type": "Organization", "name": "Edigrup" },
+    "sameAs": [
+      "https://www.linkedin.com/in/jes%C3%BAs-m%C2%AA-garrobo-vaca-1a3b4743",
+      "https://github.com/jgarrobo"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Inicio · abrir menú" aria-controls="site-nav" aria-expanded="false"><img src="/assets/favicon.svg" alt="" width="38" height="38"><span class="brand-caret" aria-hidden="true"></span></a>
+    <span class="header-name" aria-hidden="true">Jesús Garrobo</span>
+    <nav class="nav" aria-label="Principal">
+      <div class="nav-links" id="site-nav">
+        <a class="nav-link" href="#perfil">Perfil</a>
+        <a class="nav-link" href="#experiencia">Experiencia</a>
+        <a class="nav-link" href="#especiales">Proyectos</a>
+        <a class="nav-link" href="#competencias">Competencias</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <button type="button" class="theme-toggle menu-toggle" data-theme-toggle><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg><span class="t-to-dark">Modo oscuro</span><span class="t-to-light">Modo claro</span></button>
+      </div>
+      <a class="lang" href="/en/" hreflang="en" lang="en" title="English version">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Desarrollo web · Infraestructura cloud</p>
+      <h1>Jesús Mª Garrobo Vaca</h1>
+      <p class="lead">Desarrollo y opero plataformas web para medios de comunicación digitales, de la aplicación a la infraestructura en la nube.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://www.linkedin.com/in/jes%C3%BAs-m%C2%AA-garrobo-vaca-1a3b4743" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a class="btn" href="https://github.com/jgarrobo" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <p>Responsable técnico digital con más de 20 años de experiencia en desarrollo de software, hoy centrado en el sector de los medios de comunicación. Me ocupo del ciclo completo de las plataformas web: desarrollo, datos, integraciones, despliegue y operación en la nube.</p>
+      <p>Soy una persona proactiva: me adelanto a los problemas, detecto oportunidades de mejora y propongo soluciones sin esperar a que me las pidan. Trabajo de forma pragmática y prudente, con cambios probados antes de llegar a producción, soluciones sencillas cuando la complejidad no está justificada y código sin dependencias innecesarias.</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <article class="job">
+        <div class="job-head"><h3>Responsable Técnico Digital</h3><span class="dates">2023 – actualidad</span></div>
+        <p class="org">Edigrup</p>
+        <div class="media">
+          <p><span>Prensa</span> <a href="https://www.diariodeleon.es/" target="_blank" rel="nofollow noopener noreferrer">Diario de León</a> · <a href="https://www.diariodevalladolid.es/" target="_blank" rel="nofollow noopener noreferrer">Diario de Valladolid</a> · <a href="https://www.diariodecastillayleon.es/" target="_blank" rel="nofollow noopener noreferrer">Diario de Castilla y León</a> · <a href="https://www.heraldodiariodesoria.es/" target="_blank" rel="nofollow noopener noreferrer">Heraldo Diario de Soria</a> · <a href="https://www.elcorreodeburgos.com/" target="_blank" rel="nofollow noopener noreferrer">El Correo de Burgos</a></p>
+          <p><span>Radio</span> <a href="https://www.esradiocastillayleon.es/" target="_blank" rel="nofollow noopener noreferrer">esRadio Castilla y León</a> · Béjar, Bierzo, León, Salamanca, Soria, Valladolid y Castilla y León</p>
+        </div>
+        <ul>
+          <li>Arquitectura y operación de infraestructura cloud en entornos de producción y preproducción.</li>
+          <li>Optimización de costes y automatización de tareas operativas.</li>
+          <li>Desarrollo de portales informativos y gestores de contenido a medida.</li>
+          <li>Modernización de aplicaciones heredadas hacia frameworks actuales.</li>
+          <li>Integración con plataformas editoriales, multimedia, de analítica y de distribución de contenidos.</li>
+          <li>Autenticación centralizada, mensajería segura y notificaciones push.</li>
+          <li>Grafismo en directo propio para retransmisiones deportivas en YouTube: overlays para OBS con marcador, tiempo, tarjetas, publicidad y rótulos de colaboradores, gestionados desde un panel de control.</li>
+          <li>Automatización de la ingesta de contenidos y datos de terceros.</li>
+          <li>Integración y despliegue continuo, y coordinación de proyectos técnicos.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="especiales">
+      <h2>Proyectos destacados</h2>
+      <p>Algunos trabajos públicos en los que he participado: grafismo en directo para retransmisiones deportivas y especiales multimedia de Diario de León y Diario de Valladolid.</p>
+      <div class="projects">
+        <a class="project" href="https://www.youtube.com/live/9i0-zGPoBQI" target="_blank" rel="nofollow noopener noreferrer">
+          <span class="project-tag">Directo en YouTube · Grafismo OBS</span>
+          <span class="project-title">Granada CF – Real Valladolid: marcador y rótulos en directo</span>
+        </a>
+        <a class="project" href="https://www.diariodeleon.es/historias/isabel-carrasco-10-aniversario-crimen-leon/" target="_blank" rel="nofollow noopener noreferrer">
+          <span class="project-tag">Diario de León · Especial</span>
+          <span class="project-title">Isabel Carrasco: 10 años del crimen de León</span>
+        </a>
+        <a class="project" href="https://www.diariodevalladolid.es/historias/cecilia-un-ramito-de-violetas-que-no-se-marchita/" target="_blank" rel="nofollow noopener noreferrer">
+          <span class="project-tag">Diario de Valladolid · Especial</span>
+          <span class="project-title">Cecilia, un ramito de violetas que no se marchita</span>
+        </a>
+        <a class="project" href="https://www.diariodevalladolid.es/historias/noemi-busca-familia-perdida-49-anos/" target="_blank" rel="nofollow noopener noreferrer">
+          <span class="project-tag">Diario de Valladolid · Especial</span>
+          <span class="project-title">Noemí busca a su familia perdida hace 49 años</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="competencias">
+      <h2>Competencias</h2>
+      <div class="skills">
+        <details class="skill-group">
+          <summary>Desarrollo</summary>
+          <ul class="tags">
+            <li>PHP</li><li>Symfony</li><li>Sulu CMS</li><li>Python</li><li>Angular</li><li>.NET</li><li>WordPress</li><li>JavaScript</li><li>jQuery</li><li>Bootstrap</li><li>Java</li><li>Android</li>
+          </ul>
+        </details>
+        <details class="skill-group">
+          <summary>Datos y búsqueda</summary>
+          <ul class="tags">
+            <li>SQL</li><li>MySQL</li><li>SQL Server</li><li>MariaDB</li><li>Elasticsearch</li>
+          </ul>
+        </details>
+        <details class="skill-group">
+          <summary>Cloud · AWS</summary>
+          <ul class="tags">
+            <li>EC2</li><li>RDS</li><li>Lightsail</li><li>S3</li><li>CloudFront</li><li>Lambda</li><li>IAM</li><li>Secrets Manager</li><li>Route 53</li><li>Certificate Manager</li><li>EventBridge</li>
+          </ul>
+        </details>
+        <details class="skill-group">
+          <summary>Integraciones</summary>
+          <ul class="tags">
+            <li>Xalok</li><li>Thalia</li><li>Podbean</li><li>YouTube</li><li>Dailymotion</li><li>Marfeel</li><li>Google Cloud</li><li>Firebase</li><li>EFE</li><li>Europa Press</li><li>ICAL</li><li>Servimedia</li><li>Mailchimp</li><li>Microsoft Azure</li>
+          </ul>
+        </details>
+        <details class="skill-group">
+          <summary>Streaming y directo</summary>
+          <ul class="tags">
+            <li>OBS Studio</li><li>Overlays</li><li>YouTube Live</li><li>HTML/CSS/JS</li>
+          </ul>
+        </details>
+        <details class="skill-group">
+          <summary>DevOps y gestión</summary>
+          <ul class="tags">
+            <li>Git</li><li>GitLab CI/CD</li><li>Redmine</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <p>Puedes escribirme por email o a través de LinkedIn. También puedes seguir mis proyectos en GitHub.</p>
+      <div class="actions">
+        <a class="btn primary js-mail" href="#contacto" data-u="jesus" data-d="garrobo.es" hidden><i class="fa-solid fa-envelope" aria-hidden="true"></i> Escríbeme por email</a>
+        <a class="btn" href="https://www.linkedin.com/in/jes%C3%BAs-m%C2%AA-garrobo-vaca-1a3b4743" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> Escríbeme en LinkedIn</a>
+        <a class="btn" href="https://github.com/jgarrobo" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> github.com/jgarrobo</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Jesús Mª Garrobo Vaca</span>
+    <span class="footer-links"><a href="/cookies/">Política de cookies</a><button type="button" class="theme-toggle footer-toggle" data-theme-toggle><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg><span class="t-to-dark">Modo oscuro</span><span class="t-to-light">Modo claro</span></button></span>
+  </div>
+</footer>
+
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
